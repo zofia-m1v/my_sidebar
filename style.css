@@ -1,0 +1,189 @@
+:root{
+    --color1: #7d7d7d;
+    --color2: #93e8c4;
+    --color3: #609780;
+}
+
+body{
+    background: var(--color1);
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+body .bottom{
+    bottom: 25px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    background: #787878;
+}
+
+        /*=========Panel===========*/
+.panel{
+    background: var(--color2);
+    border: 1vmin solid var(--color3);
+    border-radius: 10px;
+    height: 40vmin;
+    width: 100vmin;
+    left: 50%;
+    top: 0;
+    position: relative;
+    transform: translate(-50%, 0);
+}
+.panel img{
+    color: #a82323;
+    width:5vmin;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    position: absolute;
+}
+.panel header{
+    background: #ffffff34;;
+    display: flex;
+    width: 100%;
+    height: 20%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.panel header h1{
+    background: #ffffff44;;
+    display: flex;
+    font-size: 25px;
+    position: absolute;
+    color: var(--color1);
+}
+.panel .to-do-list{
+    background: red;
+    position: relative;
+    left: 0;
+}/*-------------------------*/
+        /*========Window=============*/
+body .window{
+    z-index: 1;
+    width: 50vh;
+    height: 18vh;
+    background: var(--color1);
+    top: 50%;
+    left: 50%;
+    border: 10px solid var(--color3);
+    border-radius: 10px;
+    box-shadow: 0px 0px 200px 24px rgba(0, 0, 0, 0.525);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}  
+body .window.show{
+    display: flex;
+}     
+.window header{
+    position: absolute;
+    top: 10px;
+    background: #ffffff00;;
+    display: flex;
+    width: 100%;
+    height: 30%;
+    align-items: center;
+    justify-content: center;
+}
+.window header h1{
+    position: absolute;
+    background: #ffffff00;
+    display: flex;
+    font-size: 20px;
+    color: var(--color2);
+    left: 10px;
+}
+.window .input-area{
+    width: 95%;
+    height: 40%;
+    background: rgb(255, 255, 255);
+    transform: translate(0%, 35%);
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+}
+.window input{
+    height: 100%;
+    width: 70%;  
+    border-radius: 10px;
+    border-style: none;
+    outline: none;
+    padding: 0px 10px;
+    font-size: 15px;
+    display: flex;    
+}
+.input-area span{
+    font-size: 20px;
+    color: var(--color2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: rgb(110, 110, 110);
+    border-radius: 10px;
+}/*--------------------------------------*/
+        /*========Add Button============*/
+.plus-icon{
+    color: var(--color1);
+    font-size: 40px;
+}
+.bottom .add-button{
+    cursor: pointer;
+    background: var(--color2);
+    width: 50px;
+    height:50px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}/*------------------------------*/
+
+/*////////////////////////////////////////////////////////////////*/
+
+        /*========Checked============*/
+ul li.task .unchecked-checked i.checked{
+    opacity: 0;
+}
+ul li.task.clicked .unchecked-checked i.checked{
+    opacity: 1;
+}/*--------------------------*/
+        /*========Divide============*/
+ul li.task .unchecked-checked{
+    background: rgb(255, 255, 31);
+    height: 25px;
+    width: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-right: 10px;
+}
+.to-do-list ul li{
+    background: rgb(255, 0, 140);
+    list-style: none;
+    user-select: none;
+
+    display: flex;
+    align-items: center;
+}/*-------------------------*/
+        /*========Task============*/
+ul li.task .unchecked-checked .icon2{
+    background: rgb(137, 187, 251);
+    
+    position: absolute;
+}
+/*text-----------------------*/
+ul li.task .task-text{
+    text-decoration: none;
+}
+ul li.task.clicked .task-text{
+    text-decoration: line-through;
+    color: #404040;
+}/*---------------------------*/

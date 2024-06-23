@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body> 
+        <div class="window">
+            <header>
+                <h1>ADD NEW TASK:</h1>
+            </header>
+            <div class="input-area">
+                <span>Name:</span>
+                <input type="text" placeholder="type name of your task..."></input>
+            </div>
+        </div>
+        <div class="panel">
+            <header>
+                <h1>To do list:</h1>
+            </header>
+            <div class="to-do-list">
+                <ul class="list-of-tasks">
+                    <li class="task">
+                        <span class="unchecked-checked">
+                            <i class='bx bx-checkbox icon2 unchecked'></i>
+                            <i class='bx bxs-checkbox-checked icon2 checked'></i>
+                        </span>
+                        <span class="task-text">Task 1
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <img src="key_chain.png" alt="icon">
+        </div>
+        <div class="bottom">
+            <div class="add-button">
+                <i class='bx bx-plus plus-icon'></i>
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
+</body>
+</html>
